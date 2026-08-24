@@ -1,0 +1,52 @@
+# 发布面 = 承重面（2026-08-24 · Human 裁决：只发布"做事 + 需要它才能做事的"）
+# 以下路径仅本地保留，不随发布包（git archive 时 export-ignore 排除）。
+
+# 实验 / 历史快照（workspaces 非交付目录，对 AI-OS 运行时无影响）
+workspaces/a16_condA/** export-ignore
+workspaces/a16_condB/** export-ignore
+workspaces/a16lite_A/** export-ignore
+workspaces/a16lite_B/** export-ignore
+workspaces/batch01_k3d/** export-ignore
+workspaces/batch02_yamllint805/** export-ignore
+workspaces/batch03_clinfo/** export-ignore
+workspaces/batch04_yamllint828/** export-ignore
+workspaces/book_bare/** export-ignore
+workspaces/book_exp/** export-ignore
+workspaces/entrychain_cross1/** export-ignore
+workspaces/entrychain_obs1/** export-ignore
+workspaces/entrychain_obs2/** export-ignore
+workspaces/entrychain_obs3/** export-ignore
+workspaces/entrychain_r1/** export-ignore
+
+# 交付项目（用 AI-OS 做的项目，语义身份 = 项目，非 AI-OS 本体；不随 AI-OS 发布）
+workspaces/ai-consultant/** export-ignore
+workspaces/linkvault/** export-ignore
+workspaces/devjournal/** export-ignore
+workspaces/BATCH_* export-ignore
+workspaces/DEMO_OUTPUT_* export-ignore
+workspaces/EXTERNAL_PATCHES_* export-ignore
+workspaces/OBSERVED_CAPABILITIES_* export-ignore
+workspaces/README.md export-ignore
+
+# 会话日志副本（本地证据，不发布）
+evidence/sessions/** export-ignore
+
+# v1 宝藏清单（历史考古指针，不发布）
+treasures/** export-ignore
+
+# 实例状态（当前 AI-OS 运行实例的工作记忆，非本体模板；陌生 Agent 应看到空工作台）
+task_cards/active/DevJournal/** export-ignore
+task_cards/active/LinkVault/** export-ignore
+task_cards/active/ai-consultant/** export-ignore
+task_cards/active/TASK-*.md export-ignore
+task_cards/archive/TASK-*.md export-ignore
+evolution/workspace/INT-*.md export-ignore
+
+# 研究/历史/审计材料（本地保留，不随本体发布）
+PORTFOLIO.md export-ignore
+/experiences/** export-ignore
+evidence/** export-ignore
+evolution/a18-relevance-diagnosis-2026-08-22.md export-ignore
+evolution/architecture-recovery-2026-08-24.md export-ignore
+evolution/dsh-corpus-review-2026-08-24.md export-ignore
+evolution/dsh-remapping-2026-08-24.md export-ignore
